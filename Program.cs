@@ -40,7 +40,7 @@ public class Program
         program.Task_2_8();
         //program.Task_2_9();
         program.Task_2_10();
-        //program.Task_3_1(0.1);
+        program.Task_3_1(0.1);
         //program.Task_3_2(0.1);
         //program.Task_3_3(0.1);
         //program.Task_3_4(0.1);
@@ -509,8 +509,7 @@ public class Program
             S += n;
             n *= -(x * x) / (4 * i * i - 2 * i);
         }
-        y = Math.Round(Math.Cos(x), 2, MidpointRounding.ToEven);
-        S = Math.Round(S, 2, MidpointRounding.ToEven);
+        y = Math.Cos(x);
         // end
 
         return (S, y);
